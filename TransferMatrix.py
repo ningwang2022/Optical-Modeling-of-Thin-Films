@@ -418,17 +418,21 @@ class OpticalModeling(object):
 
             fig1.savefig(fname1, transparent=False)
             fig2.savefig(fname2, transparent=False)
-            #用于合成一副图
+            
+            # Used for synthesizing an image.
             f = open(savename + 'E2', 'wb')
-            # 将变量存储到目标文件中区
-            pickle.dump([X,Y,E2.T], f)
-            # 关闭文件
+            # Store variables in the target file area.
+            pickle.dump([X, Y, E2.T], f)
+            # Close the file.
             f.close()
+            
+            # Used for storing the current object (self) in a target file area.
             f = open(savename + 'E2self', 'wb')
-            # 将变量存储到目标文件中区
+            # Store the current object (self) in the target file area.
             pickle.dump(self, f)
-            # 关闭文件
-            f.close()            
+            # Close the file.
+            f.close()
+
         return None
 
     def PlotAbs(self, savename="Result", savefig=False, figformat='pdf'):
@@ -531,17 +535,20 @@ class OpticalModeling(object):
             fig4.savefig(fname4, transparent=False)
             fig5.savefig(fname5, transparent=False)
             
-            #用于合成一副图
+            # Used for synthesizing an image.
             f = open(savename + 'G', 'wb')
-            # 将变量存储到目标文件中区
-            pickle.dump([X,Y,self.Gx.T], f)
-            # 关闭文件
+            # Store variables in the target file area.
+            pickle.dump([X, Y, self.Gx.T], f)
+            # Close the file.
             f.close()
+            
+            # Used for storing the current object (self) in a target file area.
             f = open(savename + 'Gself', 'wb')
-            # 将变量存储到目标文件中区
+            # Store the current object (self) in the target file area.
             pickle.dump(self, f)
-            # 关闭文件
+            # Close the file.
             f.close()
+
             
         return None
 
