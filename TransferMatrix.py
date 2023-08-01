@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 """
+citation：
 @author: C. Marcus Chuang, 2015
+updated：
+@author: Ning Wang, 2023
 """
 
 import numpy as np
