@@ -19,7 +19,7 @@ We measured the optical parameters of a series of prepared film samples using el
 
 ## Examples
 
-After we determine the optical parameters and thickness of each layer, we start our simulation by running `RunModeling.py`. Also, there are the setup information for each layer (metal electrodes are ignored for now)
+After we determine the optical parameters and thickness of each layer, we start our simulation by running `RunModeling.py`. Also, there are the setup information for each layer (metal electrodes are ignored for now):
 
 ```python
 Device = [
@@ -33,6 +33,7 @@ Device = [
 <img src="/Fig/Absorption.png" width="600" >
 
 <img src="/Fig/Efield.png" width="600" >
+
 ## Requirements
 Actually, our work uses only the light absorption and light field distribution simulation parts. Our project will work fine in python 3.9 with the following dependencies:
 
